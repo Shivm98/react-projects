@@ -1,0 +1,82 @@
+.carousel {
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel .container {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  background-color: red;
+}
+
+.carousel .container .arrows {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel .container .carousel-img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .container .carousel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel .container .arrows .arrow {
+  font-size: 4rem;
+  color: #eee;
+  cursor: pointer;
+}
+
+.carousel .container .content {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel .container .content > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.carousel .container .content h1 {
+  font-size: 9rem;
+  text-transform: capitalize;
+  color: rgb(4, 99, 187);
+  font-weight: 900;
+}
+
+.carousel .container .content h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 600;
+}
+
+.carousel .container .content p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 600;
+  max-width: 60rem;
+}
+
+.carousel .container .indicators {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  color: white;
+  font-size: 3rem;
+  transform: translateX(-50%);
+}
